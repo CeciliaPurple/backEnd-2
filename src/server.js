@@ -1,33 +1,18 @@
 import express from 'express'
+import profileRouter from './routers/profileRouter.js'
+import productRouter from './routers/productRouter.js'
+import supplierRouter from './routers/supplierRouter.js'
+import carRouter from './routers/carRouter.js'
 
 const app = express()
 const port = 3000
 
-app.use(express.json()) //converte a string do JSon em objeto
+app.use(express.json()) //converte a string do JSON em objeto
 
-
-app.post('/profile', (req, res) => {
-    const dados = req.body
-    res.json({
-        message:'Perfil criado com sucesso',
-        profile: dados
-    })
-})
-
-app.get('/profile', (req, res) => {
-    res.json({message:'Perfil de usuário'})
-})
-
-app.put('/profile', (req, res) => {
-    const dados = req.body
-    res.json({
-    message:'Perfil atualizado com sucesso',
-    profile: dados})
-})
-
-app.delete('/profile', (req, res) => {
-    res.json({message:'Perfil deletado com sucesso'})
-})
+app.use('/profile', profileRouter)
+app.use('/product', productRouter)
+app.use('/supplier', supplierRouter)
+app.use('/car', carRouter)
 
 app.listen(port, () => {
     console.log(`API Rodando em http://localhost:${port}`)
