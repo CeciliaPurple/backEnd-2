@@ -27,3 +27,11 @@ ou
 - Métodos http (GET, POST, PUT, PATCH, DELETE)
 - Como mudar o formato de importação/exportação de require para import
 (Adicionar no package.json a propriedade type: "module")
+
+- O que é um Padrão de Projeto? R: Uma forma de codificar que é amplamente conhecido.
+
+- MVC = Model View Controller
+serve para organizar o código, dividindo a responsabilidade em 3 camadas.
+    Model = Acesso ao banco de dados, regras de negócio
+    View = Camada de apresentação que vai fazer a interface do usuário
+    Controller = Controla a entrada, o processamento e a saída de dados
