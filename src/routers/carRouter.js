@@ -1,15 +1,8 @@
 import express from 'express'
+import { editCarController } from '../controllers/car/editCarController.js'
 
-const router =  express.Router()
+const router = express.Router()
 
-router.put('/:id', (req, res) => {
-    const id = req.params.id
-    const car = req.body
-    res.json({
-        message:`${car.marca} ${car.modelo} com ID ${id} alterado!`,
-        marca: car.marca,
-        modelo: car.modelo
-    })
-})
+router.put('/:id', editCarController)
 
 export default router
