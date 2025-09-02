@@ -35,3 +35,16 @@ serve para organizar o código, dividindo a responsabilidade em 3 camadas.
     Model = Acesso ao banco de dados, regras de negócio
     View = Camada de apresentação que vai fazer a interface do usuário
     Controller = Controla a entrada, o processamento e a saída de dados
+
+## Prisma
+- ORM = Object Relational Model = Modelo de Objeto Relacional
+- O que é o ORM? Uma ferramenta que cria um relacionamneto entre o javascript e o banco de dados
+- Porque Usar um ORM? R: Pela facilidade de modificar e executar os comandos no banco de dados.
+
+### Dependencias
+- Dependencias DEV são utilizadas durante o desenvolvimento para ajudar
+- Dependencias normais são utilizadas internamente no código
+
+## comandos prisma
+- npx prisma db pull - traz as informações criadas no banco
+- npxprisma db push -  envia informações para o banco
