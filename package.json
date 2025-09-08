@@ -15,10 +15,11 @@
     "zod",
     "mysql"
   ],
-  "author": "Maria Cecília Costa de Oliveira",
+  "author": "Maria Cecília",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.15.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {

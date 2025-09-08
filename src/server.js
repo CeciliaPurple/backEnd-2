@@ -4,10 +4,12 @@ import productRouter from './routers/productRouter.js'
 import supplierRouter from './routers/supplierRouter.js'
 import carRouter from './routers/carRouter.js'
 import customerRouter from './routers/customerRouter.js'
+import cors from 'cors'
 
 const app = express()
 const port = 3000
 
+app.use(cors()) //habilita o CORS para todas as rotas
 app.use(express.json()) //converte a string do JSON em objeto
 
 app.use('/profile', profileRouter)
