@@ -1,6 +1,13 @@
-export const editProfileController = (req, res) => {
-    const dados = req.body
+import { update } from "../../models/profileModel.js"
+
+export const editProfileController = async (req, res) => {
+    const id = req.params.id
+    const profile = req.body
+
+    const result = await update(+id, profile)
+
     res.json({
-    message:'Perfil atualizado com sucesso',
-    profile: dados})
+        message: 'Usuário editado com sucesso',
+        profile: result
+    })
 }

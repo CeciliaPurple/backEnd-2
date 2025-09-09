@@ -46,6 +46,7 @@ serve para organizar o código, dividindo a responsabilidade em 3 camadas.
 - Dependencias normais são utilizadas internamente no código
 
 ## comandos prisma
+- npm i prisma -D -instala o prisma dev
 - npx prisma db pull - traz as informações criadas no banco
 - npxprisma db push -  envia informações para o banco
 
