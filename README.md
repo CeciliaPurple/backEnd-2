@@ -48,6 +48,7 @@ serve para organizar o código, dividindo a responsabilidade em 3 camadas.
 ## comandos prisma
 - npm i prisma -D -instala o prisma dev
 - npx prisma db pull - traz as informações criadas no banco
-- npxprisma db push -  envia informações para o banco
+- npx prisma db push -  envia informações para o banco
+- npx prisma generate
 
 - cors = uma segurança do navegador

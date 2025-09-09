@@ -10,7 +10,7 @@ const router = express.Router()
 router.post('/', createSupplierController)
 router.get('/', listSupplierController)
 router.get('/:id', getByIdSupplierController)
-router.put('/', editSupplierController)
+router.put('/:id', editSupplierController)
 router.delete('/:id', deleteSupplierController)
 
 export default router
