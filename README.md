@@ -52,3 +52,9 @@ serve para organizar o código, dividindo a responsabilidade em 3 camadas.
 - npx prisma generate
 
 - cors = uma segurança do navegador
+
+### Middleware 
+
+- é uma função
+- tudo que tem req e res é um middleware
+- padrão de projeto middleware usado pelo express que divide o código em funções que são chamadas de middleware execuções
